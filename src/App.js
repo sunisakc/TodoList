@@ -24,7 +24,7 @@ class App extends Component {
       {
         id: 4,
         title: 'Ansers emails',
-        completed: false
+        completed: true
       }
     ]
   }
