@@ -14,11 +14,16 @@ export class Todoitems extends Component {
    }
   }
 
-
+  markComplete = (e) => {
+    console.log(this.props)
+  }
   render() {
     return (
       <div style={this.getStyle()}>
-        <p>{ this.props.todo.title }</p>
+        <p>
+          <input type="checkbox" onChange={this.markComplete} /> {''}
+        { this.props.todo.title }
+        </p>
       </div>
     )
   }
